@@ -1,0 +1,26 @@
+<%= form_for @video, :html => { :class => 'form-horizontal' } do |f| %>
+
+   <% @video.errors.full_messages.each do |msg| %>
+      <p><%= msg %></p>
+   <% end %>
+
+  
+  <div class="control-group">
+    <%= f.label  :title,"视频标题", :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :title, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :file,"文件", :class => 'control-label' %>
+    <div class="controls">
+      <%= f.file_field :file, :class => 'text_field' %>
+    </div>
+  </div>
+
+  <div class="form-actions">
+    <%= f.submit nil, :class => 'btn btn-primary' %>
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+      videos_path, :class => 'btn' %>
+  </div>
+<% end %>
