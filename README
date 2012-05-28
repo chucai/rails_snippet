@@ -1,5 +1,6 @@
 整理了一些常用的Rails常用的代码片段
 
-#zh.yml: 中文国际化
-#devise.zh.yml: devise中文国际化
-#_form.html.erb: 表单，包括错误提示
+*zh.yml: 中文国际化
+*devise.zh.yml: devise中文国际化
+*_form.html.erb: 表单，包括错误提示
+*exception.rb: 在application_controller.rb中捕获异常，在cancan中可以看到应用
